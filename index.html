@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Program JavaScript</title>
+</head>
+<body>
+    <h1>Contoh Program JavaScript</h1>
+    <h1>if-else</h1>
+    <p>angka besar lebih dari 5</p>
+    <h1>nested if</h1>
+    <p>Angka genap yang lebih besar dari 5</p>
+    <h1>switch case</h1>
+    <p>Hari ini adalah Senin</p>
+    <h1>for statement</h1>
+    <p>Perulangan ke-1</p>
+    <p>Perulangan ke-2</p>
+    <p>Perulangan ke-3</p>
+    <p>Perulangan ke-4</p>
+    <p>Perulangan ke-5</p>
+    <h1>while</h1>
+    <p>-1</p>
+    <p>-2</p>
+    <p>-3</p>
+    <p>-4</p>
+    <p>-5</p>
+    <h1>do while</h1>
+    <p>-5</p>
+    <p>-4</p>
+    <p>-3</p>
+    <p>-2</p>
+    <p>-1</p>
+    <h1>function</h1>
+    <p>Hasil penambahan 8</p>
+
+    <script>
+        // Deklarasi dan inisialisasi variabel
+        var angka = 10;
+
+        // Contoh penggunaan if-else
+        if (angka > 5) {
+            console.log("Angka lebih besar dari 5.");
+        } else {
+            console.log("Angka kurang dari atau sama dengan 5.");
+        }
+
+        // Contoh penggunaan nested if
+        if (angka > 5) {
+            if (angka % 2 === 0) {
+                console.log("Angka genap yang lebih besar dari 5.");
+            } else {
+                console.log("Angka ganjil yang lebih besar dari 5.");
+            }
+        }
+
+        // Contoh penggunaan switch case
+        var hari = "Senin";
+        switch (hari) {
+            case "Senin":
+                console.log("Hari ini adalah Senin.");
+                break;
+            case "Selasa":
+                console.log("Hari ini adalah Selasa.");
+                break;
+            default:
+                console.log("Hari ini adalah hari lain.");
+        }
+
+        // Contoh penggunaan for loop
+        for (var i = 0; i < 5; i++) {
+            console.log("Perulangan ke-" + (i + 1));
+        }
+
+        // Contoh penggunaan while loop
+        var counter = 0;
+        while (counter < 5) {
+            console.log("While loop ke-" + (counter + 1));
+            counter++;
+        }
+
+        // Contoh penggunaan do-while loop
+        var n = 5;
+        do {
+            console.log("Do-While loop ke-" + n);
+            n--;
+        } while (n > 0);
+
+        // Contoh penggunaan function
+        function tambah(a, b) {
+            return a + b;
+        }
+
+        var hasil = tambah(3, 5);
+        console.log("Hasil penambahan: " + hasil);
+    </script>
+</body>
+</html>
+
